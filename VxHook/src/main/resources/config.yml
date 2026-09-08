@@ -1,0 +1,107 @@
+# ========================================== #
+#          VXHook Plugin Configuration       #
+#    Paper, Purpur & Folia 1.21.11           #
+# ========================================== #
+
+# Resource-Pack Textur Einstellungen
+# CustomModelData für Resource-Packs (Standard: 10001)
+custom-model-data: 10001
+
+# Item Eigenschaften
+item:
+  name: "&b&lVX&3&lHook"
+  lore:
+    - "&7Gleite mit physikbasiertem Schwung durch die Welt!"
+    - ""
+    - "&8» &7Haltbarkeit: &e{uses} &7/ &b{max_uses}"
+    - ""
+    - "&bRechtsklick: &7Haken feuern & heranziehen"
+    - "&8(Mit Mending & XP reparierbar)"
+
+# Haltbarkeit (Benutzungen)
+durability:
+  # Maximale Anzahl an Benutzungen vor dem Zerbrechen
+  max-uses: 100
+  # Sound wenn der Hook zerbricht (z. B. ENTITY_ITEM_BREAK)
+  break-sound: "ENTITY_ITEM_BREAK"
+  # Nachricht beim Zerbrechen (leer lassen für keine Nachricht)
+  break-message: "&cDein VXHook ist zerbrochen!"
+
+# Physik & Zugkraft
+physics:
+  # Horizontale Zugstärke (3.0 für kraftvolles Fliegen)
+  pull-strength: 3.0
+  # Vertikaler Auftrieb / Sprung nach oben beim Ziehen (0.9 für perfekten Bogen)
+  vertical-boost: 0.9
+  # Maximale Reichweite in Blöcken (bis zu 120 Blöcke)
+  max-distance: 120.0
+  # Mindestabstand zum Ziel in Blöcken
+  min-distance: 2.0
+
+# Fallschaden-Schutz
+fall-damage:
+  # Vollständiger Schutz vor Fallschaden nach der Benutzung des Hooks
+  prevent-fall-damage: true
+  # Sicherheits-Timeout in Sekunden, falls der Spieler nie aufschlägt
+  immunity-timeout-seconds: 15
+
+# Cooldown zwischen Benutzungen
+cooldown:
+  enabled: false
+  seconds: 1.0
+  message: "&cBitte warte noch {time}s vor dem nächsten Einsatz!"
+
+# Sounds & Effekte
+effects:
+  sounds:
+    # Sound beim Einholen / Ziehen
+    pull-sound: "ENTITY_ENDER_PEARL_THROW"
+    pull-volume: 1.0
+    pull-pitch: 1.2
+    # Sound beim Auswerfen
+    launch-sound: "ENTITY_ARROW_SHOOT"
+    launch-volume: 0.8
+    launch-pitch: 1.0
+    # Sound beim Haken-Einschlag
+    impact-sound: "BLOCK_IRON_TRAPDOOR_OPEN"
+    impact-volume: 0.7
+    impact-pitch: 1.4
+  particles:
+    # Partikelspur zwischen Spieler und Haken
+    enabled: true
+    # Partikel-Typ (z. B. CRIT, FIREWORK, CLOUD, ELECTRIC_SPARK)
+    type: "CRIT"
+    count: 12
+
+# Crafting-Rezept
+# Spieler können den Grappling Hook im Survival-Modus craften.
+# Standard: Formloses Rezept (1x Angel + 1x Schleimball ➔ 1x VXHook)
+# Funktioniert überall im 2x2 Inventar-Gitter sowie in der 3x3 Werkbank.
+recipe:
+  # Aktiviert oder deaktiviert das Crafting-Rezept komplett
+  enabled: true
+  # Formloses Rezept (überall im Gitter platzierbar)
+  shapeless: true
+  # Benötigte Zutaten für das Rezept
+  ingredients:
+    - "FISHING_ROD"
+    - "SLIME_BALL"
+
+
+# Berechtigungen
+permissions:
+  # Wenn false, kann JEDER Spieler den Hook von Anfang an nutzen (auch passive permission vxhook.use ist standardmäßig true)
+  require-permission-to-use: false
+
+# Nachrichten
+messages:
+  prefix: "&8[&bVX&3Hook&8] &r"
+  no-permission: "&cDazu hast du keine Berechtigung!"
+  reload: "&aKonfiguration wurde erfolgreich neu geladen!"
+  give-success: "&aVXHook an &e{player} &a({amount}x) gegeben!"
+  received-hook: "&aDu hast einen &bVX&3Hook &aerhalten!"
+  player-not-found: "&cSpieler &e{player} &cwurde nicht gefunden!"
+  only-players: "&cNur Spieler können diesen Befehl ausführen!"
+  invalid-amount: "&cUngültige Anzahl! Bitte gib eine Zahl zwischen 1 und 64 an."
+  usage: "&cVerwendung: /vxhook [give <spieler> [anzahl] | reload]"
+

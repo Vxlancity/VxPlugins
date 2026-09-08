@@ -1,0 +1,7 @@
+name: VXHook
+version: '1.0.0'
+main: de.vxplugins.hook.VXHookPlugin
+api-version: '1.21'
+folia-supported: true
+author: VXPlugins
+description: Smooth, physics-driven grappling hooks built for modern performance and zero server lag.

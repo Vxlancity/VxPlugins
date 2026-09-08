@@ -1,0 +1,8 @@
+de\vxplugins\hook\item\HookItem.class
+de\vxplugins\hook\config\PluginConfig.class
+de\vxplugins\hook\VXHookPlugin.class
+de\vxplugins\hook\listener\HookListener.class
+de\vxplugins\hook\command\VXHookCommand.class
+de\vxplugins\hook\listener\FallDamageListener.class
+de\vxplugins\hook\manager\HookPhysicsManager.class
+de\vxplugins\hook\listener\MendingListener.class
