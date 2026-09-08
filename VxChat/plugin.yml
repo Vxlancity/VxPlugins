@@ -1,0 +1,15 @@
+name: VXChat
+version: '1.0-SNAPSHOT'
+main: de.vxplugins.vxchat.VXChat
+api-version: '1.21'
+author: Vxlancity
+description: Ein extrem leichtgewichtiges Chat-Management Plugin für 1.21.x
+softdepend: [PlaceholderAPI]
+folia-supported: true
+
+commands:
+  vxchat:
+    description: Hauptbefehl für das VXChat Plugin
+    aliases: [vxc]
+    permission: vxchat.admin
+    permission-message: "§cDazu hast du keine Rechte."

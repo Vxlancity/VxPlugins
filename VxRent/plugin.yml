@@ -1,0 +1,16 @@
+name: VxRentChests
+version: 1.0.0
+main: de.vxlancity.vxrentchests.VxRentChests
+api-version: '1.21'
+prefix: VxRentChests
+commands:
+  rent-admin:
+    description: Admin commands for renting chests.
+    permission: vxrentchests.admin
+  rent:
+    description: Rent a free chest from anywhere.
+  unrent:
+    description: Gib dein gemietetes Schließfach ab.
+  rent-recover:
+    description: Kaufe abgelaufene Items frei.
+

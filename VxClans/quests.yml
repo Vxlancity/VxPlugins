@@ -1,0 +1,573 @@
+# ╔══════════════════════════════════════════════╗
+# ║           VxClans - Quest Registry           ║
+# ║       Alle verfügbaren Clan-Missionen        ║
+# ╚══════════════════════════════════════════════╝
+
+quests:
+
+  # ═══════════════════════════════════════════════
+  # ██  COMBAT - SPIELER-KILLS
+  # ═══════════════════════════════════════════════
+  combat_kills_1:
+    name: "Kriegstrommeln I"
+    description: "Erreicht gemeinsam 50 Clan-Kills."
+    type: "KILL_PLAYER"
+    target: "ALL"
+    goal: 50
+    reward-xp: 500
+    reward-money: 5000.0
+
+  combat_kills_2:
+    name: "Kriegstrommeln II"
+    description: "Erreicht gemeinsam 150 Clan-Kills."
+    type: "KILL_PLAYER"
+    target: "ALL"
+    goal: 150
+    reward-xp: 1200
+    reward-money: 12000.0
+
+  combat_kills_3:
+    name: "Blutbad"
+    description: "Erreicht gemeinsam 500 Clan-Kills."
+    type: "KILL_PLAYER"
+    target: "ALL"
+    goal: 500
+    reward-xp: 3000
+    reward-money: 35000.0
+
+  combat_kills_4:
+    name: "Unsterbliche Legende"
+    description: "Erreicht gemeinsam 1500 Clan-Kills."
+    type: "KILL_PLAYER"
+    target: "ALL"
+    goal: 1500
+    reward-xp: 8000
+    reward-money: 100000.0
+
+  combat_kills_5:
+    name: "Schlachtgott"
+    description: "Erreicht gemeinsam 5000 Clan-Kills."
+    type: "KILL_PLAYER"
+    target: "ALL"
+    goal: 5000
+    reward-xp: 20000
+    reward-money: 350000.0
+
+  # ═══════════════════════════════════════════════
+  # ██  COMBAT - MONSTER
+  # ═══════════════════════════════════════════════
+  mob_all_1:
+    name: "Monsterjäger I"
+    description: "Tötet insgesamt 500 Monster."
+    type: "KILL_MONSTER"
+    target: "ALL"
+    goal: 500
+    reward-xp: 600
+    reward-money: 4000.0
+
+  mob_all_2:
+    name: "Monsterjäger II"
+    description: "Tötet insgesamt 2000 Monster."
+    type: "KILL_MONSTER"
+    target: "ALL"
+    goal: 2000
+    reward-xp: 2000
+    reward-money: 15000.0
+
+  mob_all_3:
+    name: "Monsterjäger III"
+    description: "Tötet insgesamt 10000 Monster."
+    type: "KILL_MONSTER"
+    target: "ALL"
+    goal: 10000
+    reward-xp: 8000
+    reward-money: 75000.0
+
+  mob_zombie:
+    name: "Zombieapokalypse"
+    description: "Tötet gemeinsam 1000 Zombies."
+    type: "KILL_MONSTER"
+    target: "ZOMBIE"
+    goal: 1000
+    reward-xp: 1000
+    reward-money: 6000.0
+
+  mob_skeleton:
+    name: "Bogenschützen-Schreck"
+    description: "Tötet gemeinsam 1000 Skelette."
+    type: "KILL_MONSTER"
+    target: "SKELETON"
+    goal: 1000
+    reward-xp: 1000
+    reward-money: 6000.0
+
+  mob_creeper:
+    name: "Kriecher-Schreck"
+    description: "Tötet gemeinsam 500 Creeper."
+    type: "KILL_MONSTER"
+    target: "CREEPER"
+    goal: 500
+    reward-xp: 900
+    reward-money: 5500.0
+
+  mob_spider:
+    name: "Weberkönig"
+    description: "Tötet gemeinsam 800 Spinnen."
+    type: "KILL_MONSTER"
+    target: "SPIDER"
+    goal: 800
+    reward-xp: 900
+    reward-money: 5500.0
+
+  mob_enderman:
+    name: "Jenseits-Jäger"
+    description: "Tötet gemeinsam 200 Endermen."
+    type: "KILL_MONSTER"
+    target: "ENDERMAN"
+    goal: 200
+    reward-xp: 2000
+    reward-money: 18000.0
+
+  mob_blaze:
+    name: "Feuerlöscher"
+    description: "Tötet gemeinsam 500 Blazes im Nether."
+    type: "KILL_MONSTER"
+    target: "BLAZE"
+    goal: 500
+    reward-xp: 2500
+    reward-money: 22000.0
+
+  mob_wither_skeleton:
+    name: "Withers Fluch"
+    description: "Tötet gemeinsam 300 Wither-Skelette."
+    type: "KILL_MONSTER"
+    target: "WITHER_SKELETON"
+    goal: 300
+    reward-xp: 3000
+    reward-money: 28000.0
+
+  mob_wither:
+    name: "Boss-Slayer: Wither"
+    description: "Besiegt gemeinsam 10 Wither."
+    type: "KILL_MONSTER"
+    target: "WITHER"
+    goal: 10
+    reward-xp: 10000
+    reward-money: 150000.0
+
+  mob_elder_guardian:
+    name: "Tiefsee-Herrscher"
+    description: "Besiegt gemeinsam 20 Elder Guardian."
+    type: "KILL_MONSTER"
+    target: "ELDER_GUARDIAN"
+    goal: 20
+    reward-xp: 8000
+    reward-money: 120000.0
+
+  mob_phantom:
+    name: "Nachtjäger"
+    description: "Tötet gemeinsam 400 Phantome."
+    type: "KILL_MONSTER"
+    target: "PHANTOM"
+    goal: 400
+    reward-xp: 1500
+    reward-money: 10000.0
+
+  mob_drowned:
+    name: "Unterwasser-Terror"
+    description: "Tötet gemeinsam 600 Ertrunkene."
+    type: "KILL_MONSTER"
+    target: "DROWNED"
+    goal: 600
+    reward-xp: 1200
+    reward-money: 8000.0
+
+  mob_husk:
+    name: "Wüstensturm"
+    description: "Tötet gemeinsam 600 Hünen."
+    type: "KILL_MONSTER"
+    target: "HUSK"
+    goal: 600
+    reward-xp: 1200
+    reward-money: 8000.0
+
+  mob_piglin:
+    name: "Goldene Beute"
+    description: "Tötet gemeinsam 500 Piglins."
+    type: "KILL_MONSTER"
+    target: "PIGLIN"
+    goal: 500
+    reward-xp: 2000
+    reward-money: 15000.0
+
+  mob_hoglin:
+    name: "Netherschwein-Jagd"
+    description: "Tötet gemeinsam 200 Hoglins."
+    type: "KILL_MONSTER"
+    target: "HOGLIN"
+    goal: 200
+    reward-xp: 2500
+    reward-money: 20000.0
+
+  mob_shulker:
+    name: "Schwebende Gefahr"
+    description: "Tötet gemeinsam 100 Shulker."
+    type: "KILL_MONSTER"
+    target: "SHULKER"
+    goal: 100
+    reward-xp: 5000
+    reward-money: 60000.0
+
+  mob_guardian:
+    name: "Ozeanmonument-Sieger"
+    description: "Tötet gemeinsam 500 Guardians."
+    type: "KILL_MONSTER"
+    target: "GUARDIAN"
+    goal: 500
+    reward-xp: 3000
+    reward-money: 25000.0
+
+  # ═══════════════════════════════════════════════
+  # ██  MINING - BERGBAU
+  # ═══════════════════════════════════════════════
+  mine_stone_1:
+    name: "Steinbrecher I"
+    description: "Baut gemeinsam 5000 Steine ab."
+    type: "BLOCK_BREAK"
+    target: "STONE"
+    goal: 5000
+    reward-xp: 600
+    reward-money: 3000.0
+
+  mine_stone_2:
+    name: "Steinbrecher II"
+    description: "Baut gemeinsam 30000 Steine ab."
+    type: "BLOCK_BREAK"
+    target: "STONE"
+    goal: 30000
+    reward-xp: 2500
+    reward-money: 15000.0
+
+  mine_deepslate:
+    name: "Tiefgesteins-Profi"
+    description: "Baut gemeinsam 5000 Tiefengestein ab."
+    type: "BLOCK_BREAK"
+    target: "DEEPSLATE"
+    goal: 5000
+    reward-xp: 1500
+    reward-money: 10000.0
+
+  mine_coal:
+    name: "Kohle-Fabrik"
+    description: "Baut gemeinsam 8000 Kohle-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "COAL_ORE"
+    goal: 8000
+    reward-xp: 800
+    reward-money: 4000.0
+
+  mine_iron_1:
+    name: "Eiserne Reserve I"
+    description: "Baut gemeinsam 2000 Eisen-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "IRON_ORE"
+    goal: 2000
+    reward-xp: 2000
+    reward-money: 12000.0
+
+  mine_iron_2:
+    name: "Eiserne Reserve II"
+    description: "Baut gemeinsam 10000 Eisen-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "IRON_ORE"
+    goal: 10000
+    reward-xp: 7000
+    reward-money: 50000.0
+
+  mine_gold_1:
+    name: "Goldfieber I"
+    description: "Baut gemeinsam 1000 Gold-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "GOLD_ORE"
+    goal: 1000
+    reward-xp: 2500
+    reward-money: 18000.0
+
+  mine_gold_2:
+    name: "Goldfieber II"
+    description: "Baut gemeinsam 5000 Gold-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "GOLD_ORE"
+    goal: 5000
+    reward-xp: 8000
+    reward-money: 70000.0
+
+  mine_diamond_1:
+    name: "Glanzstunde I"
+    description: "Baut gemeinsam 200 Diamant-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "DIAMOND_ORE"
+    goal: 200
+    reward-xp: 5000
+    reward-money: 40000.0
+
+  mine_diamond_2:
+    name: "Glanzstunde II"
+    description: "Baut gemeinsam 1000 Diamant-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "DIAMOND_ORE"
+    goal: 1000
+    reward-xp: 15000
+    reward-money: 150000.0
+
+  mine_emerald:
+    name: "Händlerglück"
+    description: "Baut gemeinsam 200 Smaragd-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "EMERALD_ORE"
+    goal: 200
+    reward-xp: 6000
+    reward-money: 55000.0
+
+  mine_ancient_debris:
+    name: "Altes Erz"
+    description: "Baut gemeinsam 100 Altes Erz ab."
+    type: "BLOCK_BREAK"
+    target: "ANCIENT_DEBRIS"
+    goal: 100
+    reward-xp: 12000
+    reward-money: 120000.0
+
+  mine_lapis:
+    name: "Lapislazuli-Sammler"
+    description: "Baut gemeinsam 2000 Lapislazuli-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "LAPIS_ORE"
+    goal: 2000
+    reward-xp: 2000
+    reward-money: 14000.0
+
+  mine_redstone:
+    name: "Redstone-Ingenieur"
+    description: "Baut gemeinsam 3000 Redstone-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "REDSTONE_ORE"
+    goal: 3000
+    reward-xp: 2000
+    reward-money: 12000.0
+
+  mine_obsidian:
+    name: "Dunkle Materie"
+    description: "Baut gemeinsam 1000 Obsidian ab."
+    type: "BLOCK_BREAK"
+    target: "OBSIDIAN"
+    goal: 1000
+    reward-xp: 3000
+    reward-money: 22000.0
+
+  mine_nether_quartz:
+    name: "Nether-Quarz"
+    description: "Baut gemeinsam 3000 Nether-Quarz-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "NETHER_QUARTZ_ORE"
+    goal: 3000
+    reward-xp: 2500
+    reward-money: 18000.0
+
+  mine_nether_gold:
+    name: "Nether-Gold"
+    description: "Baut gemeinsam 2000 Nether-Gold-Erz ab."
+    type: "BLOCK_BREAK"
+    target: "NETHER_GOLD_ORE"
+    goal: 2000
+    reward-xp: 3000
+    reward-money: 25000.0
+
+  # ═══════════════════════════════════════════════
+  # ██  FARMING - LANDWIRTSCHAFT
+  # ═══════════════════════════════════════════════
+  farm_wheat:
+    name: "Weizenfeld"
+    description: "Erntet gemeinsam 5000 Weizen."
+    type: "BLOCK_BREAK"
+    target: "WHEAT"
+    goal: 5000
+    reward-xp: 1000
+    reward-money: 6000.0
+
+  farm_carrot:
+    name: "Karotten-König"
+    description: "Erntet gemeinsam 5000 Karotten."
+    type: "BLOCK_BREAK"
+    target: "CARROTS"
+    goal: 5000
+    reward-xp: 1000
+    reward-money: 6000.0
+
+  farm_potato:
+    name: "Kartoffel-Baron"
+    description: "Erntet gemeinsam 5000 Kartoffeln."
+    type: "BLOCK_BREAK"
+    target: "POTATOES"
+    goal: 5000
+    reward-xp: 1000
+    reward-money: 6000.0
+
+  farm_beetroot:
+    name: "Rote-Beete-Bauer"
+    description: "Erntet gemeinsam 3000 Rote Beete."
+    type: "BLOCK_BREAK"
+    target: "BEETROOTS"
+    goal: 3000
+    reward-xp: 800
+    reward-money: 5000.0
+
+  farm_sugarcane:
+    name: "Zuckerbaron"
+    description: "Erntet gemeinsam 8000 Zuckerrohr."
+    type: "BLOCK_BREAK"
+    target: "SUGAR_CANE"
+    goal: 8000
+    reward-xp: 1500
+    reward-money: 9000.0
+
+  farm_nether_wart:
+    name: "Alchemisten-Traum"
+    description: "Erntet gemeinsam 3000 Netherwarzen."
+    type: "BLOCK_BREAK"
+    target: "NETHER_WART"
+    goal: 3000
+    reward-xp: 4000
+    reward-money: 30000.0
+
+  farm_oak:
+    name: "Holzhacker I (Eiche)"
+    description: "Fällt gemeinsam 5000 Eichen-Stämme."
+    type: "BLOCK_BREAK"
+    target: "OAK_LOG"
+    goal: 5000
+    reward-xp: 2000
+    reward-money: 12000.0
+
+  farm_spruce:
+    name: "Holzhacker II (Fichte)"
+    description: "Fällt gemeinsam 5000 Fichten-Stämme."
+    type: "BLOCK_BREAK"
+    target: "SPRUCE_LOG"
+    goal: 5000
+    reward-xp: 2000
+    reward-money: 12000.0
+
+  farm_dark_oak:
+    name: "Holzhacker III (Dunkle Eiche)"
+    description: "Fällt gemeinsam 3000 Dunkeleichen-Stämme."
+    type: "BLOCK_BREAK"
+    target: "DARK_OAK_LOG"
+    goal: 3000
+    reward-xp: 2000
+    reward-money: 13000.0
+
+  farm_bamboo:
+    name: "Bambus-Imperium"
+    description: "Erntet gemeinsam 15000 Bambus."
+    type: "BLOCK_BREAK"
+    target: "BAMBOO"
+    goal: 15000
+    reward-xp: 2500
+    reward-money: 16000.0
+
+  farm_chorus:
+    name: "End-Früchte"
+    description: "Erntet gemeinsam 1000 Chorus-Blüten."
+    type: "BLOCK_BREAK"
+    target: "CHORUS_FLOWER"
+    goal: 1000
+    reward-xp: 3000
+    reward-money: 22000.0
+
+  # ═══════════════════════════════════════════════
+  # ██  ECONOMY - WIRTSCHAFT (HOHE BELOHNUNGEN!)
+  # ═══════════════════════════════════════════════
+  eco_deposit_1:
+    name: "Erste Investition"
+    description: "Zahlt 25.000$ in die Clan-Kasse ein."
+    type: "DEPOSIT"
+    target: "BANK"
+    goal: 25000
+    reward-xp: 1500
+    reward-money: 5000.0
+
+  eco_deposit_2:
+    name: "Großinvestoren"
+    description: "Zahlt 100.000$ in die Clan-Kasse ein."
+    type: "DEPOSIT"
+    target: "BANK"
+    goal: 100000
+    reward-xp: 5000
+    reward-money: 20000.0
+
+  eco_deposit_3:
+    name: "Wirtschaftsmacht"
+    description: "Zahlt 500.000$ in die Clan-Kasse ein."
+    type: "DEPOSIT"
+    target: "BANK"
+    goal: 500000
+    reward-xp: 15000
+    reward-money: 80000.0
+
+  eco_deposit_4:
+    name: "Milliardärs-Clan"
+    description: "Zahlt 2.000.000$ in die Clan-Kasse ein."
+    type: "DEPOSIT"
+    target: "BANK"
+    goal: 2000000
+    reward-xp: 40000
+    reward-money: 250000.0
+
+  eco_deposit_5:
+    name: "Finanzkönig"
+    description: "Zahlt 10.000.000$ in die Clan-Kasse ein."
+    type: "DEPOSIT"
+    target: "BANK"
+    goal: 10000000
+    reward-xp: 100000
+    reward-money: 750000.0
+
+  # ═══════════════════════════════════════════════
+  # ██  EXPLORATION - ERKUNDUNG
+  # ═══════════════════════════════════════════════
+  explore_1:
+    name: "Weltenbummler I"
+    description: "Reist gemeinsam 20.000 Blöcke."
+    type: "EXPLORE"
+    target: "DISTANCE"
+    goal: 20000
+    reward-xp: 800
+    reward-money: 5000.0
+
+  explore_2:
+    name: "Weltenbummler II"
+    description: "Reist gemeinsam 100.000 Blöcke."
+    type: "EXPLORE"
+    target: "DISTANCE"
+    goal: 100000
+    reward-xp: 3000
+    reward-money: 20000.0
+
+  explore_3:
+    name: "Weltenbummler III"
+    description: "Reist gemeinsam 500.000 Blöcke."
+    type: "EXPLORE"
+    target: "DISTANCE"
+    goal: 500000
+    reward-xp: 10000
+    reward-money: 80000.0
+
+  explore_4:
+    name: "Weltenentdecker"
+    description: "Reist gemeinsam 2.000.000 Blöcke."
+    type: "EXPLORE"
+    target: "DISTANCE"
+    goal: 2000000
+    reward-xp: 30000
+    reward-money: 250000.0

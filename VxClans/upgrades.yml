@@ -1,0 +1,196 @@
+# ╔══════════════════════════════════════════════╗
+# ║          VxClans Premium Upgrades            ║
+# ║        Plugin Support by Vxlancity           ║
+# ╚══════════════════════════════════════════════╝
+#
+# Typen: MAX_MEMBERS | RADIUS | EFFECT
+# requires: ID eines anderen Upgrades das ZUERST gekauft sein muss
+# requires-protection: Wird versteckt wenn protection.enabled: false
+
+upgrades:
+
+  # ╔══════════════════════════════════╗
+  # ║         MITGLIEDER-SLOTS         ║
+  # ╚══════════════════════════════════╝
+  slots_1:
+    name: "<green><bold>CLAN-SLOTS I  <dark_gray>(5 → 10)"
+    material: TOTEM_OF_UNDYING
+    lore:
+      - "<gray>Erhöht das Mitglieder-Limit auf <white>10<gray>."
+    type: "MAX_MEMBERS"
+    value: "10"
+    level-requirement: 2
+    cost: 50000.0
+    requires-protection: false
+    requires: null
+
+  slots_2:
+    name: "<green><bold>CLAN-SLOTS II  <dark_gray>(10 → 20)"
+    material: TOTEM_OF_UNDYING
+    lore:
+      - "<gray>Erhöht das Mitglieder-Limit auf <white>20<gray>."
+    type: "MAX_MEMBERS"
+    value: "20"
+    level-requirement: 8
+    cost: 250000.0
+    requires-protection: false
+    requires: "slots_1"
+
+  slots_3:
+    name: "<green><bold>CLAN-SLOTS III  <dark_gray>(20 → 40)"
+    material: TOTEM_OF_UNDYING
+    lore:
+      - "<gray>Erhöht das Mitglieder-Limit auf <white>40<gray>."
+    type: "MAX_MEMBERS"
+    value: "40"
+    level-requirement: 20
+    cost: 1000000.0
+    requires-protection: false
+    requires: "slots_2"
+
+  # ╔══════════════════════════════════╗
+  # ║           SCHUTZ-RADIUS          ║
+  # ╚══════════════════════════════════╝
+  radius_1:
+    name: "<aqua><bold>SCHUTZ-RADIUS I  <dark_gray>(30 → 60m)"
+    material: BEACON
+    lore:
+      - "<gray>Erhöht den Radius der Clan-Base auf <white>60m<gray>."
+    type: "RADIUS"
+    value: "60"
+    level-requirement: 5
+    cost: 100000.0
+    requires-protection: true
+    requires: null
+
+  radius_2:
+    name: "<aqua><bold>SCHUTZ-RADIUS II  <dark_gray>(60 → 100m)"
+    material: BEACON
+    lore:
+      - "<gray>Erhöht den Radius der Clan-Base auf <white>100m<gray>."
+    type: "RADIUS"
+    value: "100"
+    level-requirement: 12
+    cost: 500000.0
+    requires-protection: true
+    requires: "radius_1"
+
+  # ╔══════════════════════════════════╗
+  # ║         UTILITY-EFFEKTE          ║
+  # ╚══════════════════════════════════╝
+  night_vision:
+    name: "<dark_purple><bold>NACHTSICHT"
+    material: ENDER_EYE
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Nachtsicht<gray>."
+    type: "EFFECT"
+    value: "NIGHT_VISION:1"
+    level-requirement: 5
+    cost: 75000.0
+    requires-protection: false
+    requires: null
+
+  haste_1:
+    name: "<yellow><bold>EILE I"
+    material: GOLDEN_PICKAXE
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Eile I<gray>."
+    type: "EFFECT"
+    value: "FAST_DIGGING:1"
+    level-requirement: 8
+    cost: 150000.0
+    requires-protection: false
+    requires: null
+
+  haste_2:
+    name: "<yellow><bold>EILE II"
+    material: DIAMOND_PICKAXE
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Eile II<gray>."
+    type: "EFFECT"
+    value: "FAST_DIGGING:2"
+    level-requirement: 18
+    cost: 750000.0
+    requires-protection: false
+    requires: "haste_1"
+
+  # ╔══════════════════════════════════╗
+  # ║         TEMPO-EFFEKTE            ║
+  # ╚══════════════════════════════════╝
+  speed_1:
+    name: "<white><bold>SCHNELLIGKEIT I"
+    material: FEATHER
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Schnelligkeit I<gray>."
+    type: "EFFECT"
+    value: "SPEED:1"
+    level-requirement: 10
+    cost: 200000.0
+    requires-protection: false
+    requires: null
+
+  speed_2:
+    name: "<white><bold>SCHNELLIGKEIT II"
+    material: RABBIT_FOOT
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Schnelligkeit II<gray>."
+    type: "EFFECT"
+    value: "SPEED:2"
+    level-requirement: 22
+    cost: 800000.0
+    requires-protection: false
+    requires: "speed_1"
+
+  # ╔══════════════════════════════════╗
+  # ║          KAMPF-EFFEKTE           ║
+  # ╚══════════════════════════════════╝
+  strength_1:
+    name: "<red><bold>STÄRKE I"
+    material: DIAMOND_SWORD
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Stärke I<gray>."
+    type: "EFFECT"
+    value: "INCREASE_DAMAGE:1"
+    level-requirement: 12
+    cost: 250000.0
+    requires-protection: false
+    requires: null
+
+  strength_2:
+    name: "<red><bold>STÄRKE II"
+    material: NETHERITE_SWORD
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Stärke II<gray>."
+    type: "EFFECT"
+    value: "INCREASE_DAMAGE:2"
+    level-requirement: 25
+    cost: 1200000.0
+    requires-protection: false
+    requires: "strength_1"
+
+  # ╔══════════════════════════════════╗
+  # ║         DEFENSIV-EFFEKTE         ║
+  # ╚══════════════════════════════════╝
+  resistance_1:
+    name: "<dark_aqua><bold>RESISTENZ I"
+    material: SHIELD
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Resistenz I<gray>."
+    type: "EFFECT"
+    value: "DAMAGE_RESISTANCE:1"
+    level-requirement: 15
+    cost: 500000.0
+    requires-protection: false
+    requires: null
+
+  regen_1:
+    name: "<light_purple><bold>REGENERATION I"
+    material: GOLDEN_APPLE
+    lore:
+      - "<gray>Alle Mitglieder erhalten dauerhaft <white>Regeneration I<gray>."
+    type: "EFFECT"
+    value: "REGENERATION:1"
+    level-requirement: 20
+    cost: 1000000.0
+    requires-protection: false
+    requires: "resistance_1"

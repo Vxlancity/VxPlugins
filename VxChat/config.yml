@@ -1,0 +1,31 @@
+# ==========================================
+#             VXChat Konfiguration
+# ==========================================
+
+# Das generelle Format für den globalen Chat.
+# Unterstützt PlaceholderAPI (z.B. %player_name%, %vault_prefix%).
+# Standard-Platzhalter (auch ohne PAPI): {player} für den Namen, {message} für die Nachricht.
+# Unterstützt MiniMessage (z.B. <red>, <bold>) und Legacy-Farbcodes (&a, &l).
+chat-format: "&8[&7Global&8] &f{player} &8» &7{message}"
+
+local-chat:
+  # Aktiviert den lokalen Chat. Spieler hören nur Nachrichten von Spielern in ihrer Nähe.
+  enabled: true
+  # Die Reichweite in Blöcken.
+  radius: 100
+  # Format für den lokalen Chat.
+  format: "&8[&aLokal&8] &f{player} &8» &7{message}"
+  # Wenn ein Spieler keine anderen Spieler in der Nähe hat, bekommt er diese Nachricht. (Leer lassen, um zu deaktivieren)
+  no-players-nearby: "&cEs ist niemand in der Nähe, der dich hören kann."
+
+anti-spam:
+  # Aktiviert das Anti-Spam-System.
+  enabled: true
+  # Wie viele Sekunden müssen zwischen zwei Nachrichten vergehen?
+  delay-seconds: 3
+  # Blockiert das Senden der exakt gleichen Nachricht zweimal hintereinander?
+  block-identical: true
+  # Nachricht, die gesendet wird, wenn man zu schnell schreibt.
+  message-too-fast: "&cBitte schreibe nicht so schnell! Warte noch {time} Sekunden."
+  # Nachricht, die gesendet wird, wenn man die gleiche Nachricht wiederholt.
+  message-identical: "&cBitte wiederhole nicht die gleiche Nachricht."

@@ -1,0 +1,21 @@
+# VxRentChests - Professional Economy System
+settings:
+  prefix: "<dark_gray>«</dark_gray> <gradient:#00f2fe:#4facfe><b>VxRent</b></gradient> <dark_gray>»</dark_gray> "
+  cooldown-time: 12
+  keep-items-on-expire: true
+
+branding:
+  item: "NETHER_STAR"
+  name: "<gradient:#ff0844:#ffb199><b>Premium Schließfächer</b></gradient>"
+  lore:
+    - "<dark_gray><i>Hochsicherheitsschließfächer am Spawn</i></dark_gray>"
+    - ""
+    - "<white>▶</white> <gray>100% Sicher vor Diebstahl</gray>"
+    - "<white>▶</white> <gray>Permanent geschützt</gray>"
+    - "<white>▶</white> <gray>Weltweiter Zugriff über /rent</gray>"
+    - ""
+    - "<dark_gray>Premium Plugin von <gradient:#ff7e5f:#feb47b><b>Vxlancity</b></gradient>"
+
+prices:
+  small: 5000.0  
+  large: 10000.0 

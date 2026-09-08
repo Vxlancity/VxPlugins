@@ -1,0 +1,54 @@
+name: VxClans
+version: '1.0'
+main: de.vxlancity.vxclans.VxClans
+api-version: '1.21'
+authors: [Vxlancity]
+description: Premium Home- und Clan-System Plugin
+depend: [Vault]
+softdepend: [LuckPerms, PlaceholderAPI]
+commands:
+  home:
+    description: Oeffnet die Home-GUI
+    usage: '/<command>'
+    permission: vxclans.home
+  sethome:
+    description: Setzt ein Home
+    usage: '/<command> [name]'
+    permission: vxclans.sethome
+  delhome:
+    description: Loescht ein Home
+    usage: '/<command> [name]'
+    permission: vxclans.delhome
+  clan:
+    description: Clan-System Commands
+    usage: '/<command> [create|invite|accept|kick|setbase|leave|delete|info|list|rename|setsuffix|chat|ally|enemy|vault|stats|level|leaderboard|quests]'
+    aliases: [clans]
+    permission: vxclans.clan
+  clanchat:
+    description: Clan-Chat
+    usage: '/<command> [nachricht]'
+    aliases: [cc]
+    permission: vxclans.clanchat
+  vxclans:
+    description: Admin-Commands für VxClans
+    usage: '/<command> reload'
+    permission: vxclans.admin
+permissions:
+  vxclans.home:
+    description: Erlaubt /home
+    default: true
+  vxclans.sethome:
+    description: Erlaubt /sethome
+    default: true
+  vxclans.delhome:
+    description: Erlaubt /delhome
+    default: true
+  vxclans.clan:
+    description: Erlaubt /clan
+    default: true
+  vxclans.clanchat:
+    description: Erlaubt /clanchat
+    default: true
+  vxclans.admin:
+    description: Admin Permission
+    default: op

@@ -1,0 +1,179 @@
+# ╔══════════════════════════════════════════════╗
+# ║          VxClans Premium Config              ║
+# ║        Plugin Support by Vxlancity           ║
+# ╚══════════════════════════════════════════════╝
+
+settings:
+  auto-save-interval: 5
+  clan-pvp-protection: true
+  max-name-length: 16
+  max-suffix-length: 4
+  default-homes: 1
+  base-protection-radius: 50
+  
+  diplomacy:
+    max-allies: 3
+    max-enemies: 10
+
+  chat:
+    enable-suffix: false
+    suffix-format: " <gray>[<color:#ffaa00>%clan%</color>]</gray>"
+    clan-chat-format: "<dark_gray>[<color:#ffaa00>CC</color>] <gray>%player%<dark_gray>: <white>%message%"
+
+  sounds:
+    gui-open: "BLOCK_CHEST_OPEN"
+    gui-click: "UI_BUTTON_CLICK"
+    success: "ENTITY_PLAYER_LEVELUP"
+    error: "ENTITY_VILLAGER_NO"
+    teleport: "ENTITY_ENDERMAN_TELEPORT"
+    deposit: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    withdraw: "BLOCK_ANVIL_USE"
+    invite: "ENTITY_PLAYER_LEVELUP"
+    clan-create: "UI_TOAST_CHALLENGE_COMPLETE"
+    role-change: "BLOCK_NOTE_BLOCK_PLING"
+
+  particles:
+    teleport-enabled: true
+    teleport-particle: "PORTAL"
+    teleport-count: 50
+
+messages:
+  prefix: "<dark_gray>» <color:#ffaa00>VxClans</color> <dark_gray>│ <gray>"
+  no-permission: "<red>✘ Dazu hast du keine Rechte!"
+  not-in-clan: "<red>✘ Du bist in keinem Clan!"
+  clan-not-found: "<red>✘ Clan nicht gefunden!"
+  only-players: "<red>✘ Nur für Spieler!"
+  usage-sethome: "<red>✘ Verwendung: <white>/sethome <name>"
+  usage-delhome: "<red>✘ Verwendung: <white>/delhome <name>"
+  home-exists: "<red>✘ Du hast bereits ein Home mit diesem Namen!"
+  home-limit: "<red>✘ Du hast dein Home-Limit von <white>%limit% <red>erreicht!"
+  home-set: "<green>✔ Home <white>%name% <green>wurde gesetzt!"
+  home-not-found: "<red>✘ Home <white>%name% <red>existiert nicht!"
+  home-deleted: "<green>✔ Home <white>%name% <green>wurde gelöscht!"
+  teleport-clan-base: "<green>✔ Du wurdest zur <white>Clan-Base <green>teleportiert."
+  teleport-home: "<green>✔ Du wurdest zu <white>%name% <green>teleportiert."
+  usage-create: "<red>✘ Verwendung: <white>/clan create <name> <suffix>"
+  already-in-clan: "<red>✘ Du bist bereits in einem Clan!"
+  clan-name-exists: "<red>✘ Ein Clan mit diesem Namen existiert bereits!"
+  clan-created: "<green>✔ Clan <white>%name% <green>wurde erfolgreich erstellt!"
+  clan-base-set: "<green>✔ Clan-Base wurde erfolgreich gesetzt!"
+  owner-leave: "<red>✘ Du bist der Owner! Übertrage zuerst den Rang oder lösche den Clan."
+  clan-deleted-last: "<green>✔ Clan wurde gelöscht, da du das letzte Mitglied warst."
+  clan-left: "<green>✔ Du hast den Clan verlassen."
+  not-enough-money: "<red>✘ Du hast nicht genug Geld!"
+  clan-not-enough-money: "<red>✘ Die Clan-Kasse hat nicht genug Geld!"
+  deposit: "<green>✔ Du hast <white>%amount%$ <green>eingezahlt."
+  withdraw: "<green>✔ Du hast <white>%amount%$ <green>ausgezahlt."
+  need-admin: "<red>✘ Dazu musst du mindestens <white>Clan-Admin <red>sein!"
+  need-moderator: "<red>✘ Dazu musst du mindestens <white>Clan-Moderator <red>sein!"
+  role-cant-edit: "<red>✘ Du kannst diese Rolle nicht bearbeiten!"
+  owner-only: "<red>✘ Nur der <white>Clan-Owner <red>kann das tun!"
+  role-transfer: "<green>✔ Du hast die Owner-Rolle übertragen!"
+  role-changed: "<green>✔ Die Rolle wurde auf <white>%role% <green>geändert!"
+  clan-invite-usage: "<red>✘ Verwendung: <white>/clan invite <spieler>"
+  clan-invite-sent: "<green>✔ Du hast <white>%player% <green>eingeladen!"
+  clan-invite-received: "<green>✔ Du wurdest vom Clan <white>%clan% <green>eingeladen! Tippe <white>/clan accept"
+  no-invite: "<red>✘ Du hast keine offene Einladung!"
+  clan-joined: "<green>✔ Du bist dem Clan beigetreten!"
+  clan-joined-broadcast: "<green>✔ <white>%player% <green>ist dem Clan beigetreten!"
+  clan-kick-usage: "<red>✘ Verwendung: <white>/clan kick <spieler>"
+  clan-kick: "<green>✔ Du hast <white>%player% <green>aus dem Clan geworfen!"
+  clan-kicked: "<red>✘ Du wurdest aus dem Clan geworfen!"
+  player-not-found: "<red>✘ Spieler nicht gefunden oder nicht online!"
+  player-not-in-clan: "<red>✘ Dieser Spieler ist nicht in deinem Clan!"
+  cant-kick-higher: "<red>✘ Du kannst diesen Spieler nicht kicken! Er hat einen höheren Rang."
+  clan-delete-confirm: "<red>⚠ Tippe <white>/clan confirm <red>innerhalb von 30 Sekunden, um den Clan unwiderruflich zu löschen."
+  clan-deleted: "<green>✔ Clan wurde unwiderruflich gelöscht!"
+  no-pending-confirm: "<red>✘ Es gibt nichts zu bestätigen."
+  config-reloaded: "<green>✔ Konfiguration wurde erfolgreich neu geladen!"
+  clan-rename-usage: "<red>✘ Verwendung: <white>/clan rename <name>"
+  clan-renamed: "<green>✔ Clan umbenannt zu <white>%name%<green>!"
+  clan-setsuffix-usage: "<red>✘ Verwendung: <white>/clan setsuffix <suffix>"
+  clan-suffix-set: "<green>✔ Suffix geändert zu <white>%suffix%<green>!"
+  clan-chat-usage: "<red>✘ Verwendung: <white>/cc <nachricht>"
+  clan-base-not-set: "<red>✘ Die Clan-Base wurde noch nicht gesetzt!"
+  help-header: "<dark_gray>╔══════════════════════════════════════╗"
+  help-footer: "<dark_gray>╚══════════════════════════════════════╝"
+
+guis:
+  back-name: "<red>← Zurück"
+  back-lore: "<dark_gray>» <gray>Klicke, um zurückzugehen."
+  home:
+    title: "<dark_gray>« <white>Homes <dark_gray>»"
+    home-item-lore-1: "<dark_gray>» <gray>Welt: <white>%world%"
+    home-item-lore-2: "<dark_gray>» <gray>Position: <white>%x%<gray>, <white>%y%<gray>, <white>%z%"
+    home-item-lore-3: " "
+    home-item-lore-4: "<green>▶ Klicke zum Teleportieren"
+    info-name: "<color:#ffaa00>ℹ Deine Homes</color>"
+    info-lore: "<dark_gray>» <gray>Du hast <white>%count%<gray>/<white>%max% <gray>Homes."
+    base-name: "<red>⚑ Clan-Base"
+    base-lore-1: "<dark_gray>» <gray>Teleportiere zur Clan-Basis."
+    base-lore-2: " "
+    base-lore-3: "<green>▶ Klicke zum Teleportieren"
+  clan:
+    title: "<dark_gray>« <white>%name% <dark_gray>»"
+    kasse-name: "<gold>⛁ Clan-Kasse"
+    kasse-lore-1: "<dark_gray>» <gray>Guthaben: <green>%balance%$"
+    kasse-lore-2: " "
+    kasse-lore-3: "<green>▶ Klicke zum Verwalten"
+    mitglieder-name: "<green>☺ Mitglieder"
+    mitglieder-lore-1: "<dark_gray>» <gray>Mitglieder: <white>%count%"
+    mitglieder-lore-2: " "
+    mitglieder-lore-3: "<green>▶ Klicke zum Anzeigen"
+    info-name: "<light_purple>ℹ Clan Info"
+    info-lore-1: "<dark_gray>» <gray>Erstellt: <white>%date%"
+    info-lore-2: "<dark_gray>» <gray>Suffix: <white>%suffix%"
+    info-lore-3: " "
+    info-lore-4: "<green>▶ Klicke für Details"
+    settings-name: "<aqua>⚙ Einstellungen"
+    settings-lore-1: "<dark_gray>» <gray>Clan verwalten."
+    settings-lore-2: " "
+    settings-lore-3: "<green>▶ Klicke zum Öffnen"
+  vault:
+    title: "<dark_gray>« <white>Clan-Kasse <dark_gray>»"
+    info-name: "<gold>⛁ Kontostand"
+    info-lore: "<dark_gray>» <gray>Guthaben: <green>%balance%$"
+  members:
+    title: "<dark_gray>« <white>Mitglieder <dark_gray>»"
+    online-lore: "<dark_gray>» <green>● Online"
+    offline-lore: "<dark_gray>» <red>● Offline"
+    role-lore: "<dark_gray>» <gray>Rang: <white>%role%"
+    manage-lore: "<green>▶ Klicke zum Verwalten"
+  roles:
+    title: "<dark_gray>« <white>Rolle: %name% <dark_gray>»"
+    member: "<green>⚔ MEMBER"
+    moderator: "<blue>⚔ MODERATOR"
+    admin: "<dark_purple>⚔ ADMIN"
+    owner: "<gold>♛ OWNER"
+    role-lore: "<dark_gray>» <gray>Rolle zu <white>%role% <gray>ändern."
+    role-lore-2: "<green>▶ Klicke zum Auswählen"
+  settings:
+    title: "<dark_gray>« <white>Einstellungen <dark_gray>»"
+    setbase-name: "<green>⚑ Clan-Base setzen"
+    setbase-lore-1: "<dark_gray>» <gray>Setzt die Clan-Base auf"
+    setbase-lore-2: "<dark_gray>» <gray>deine aktuelle Position."
+    setbase-lore-3: " "
+    setbase-lore-4: "<green>▶ Klicke zum Setzen"
+    rename-name: "<yellow>✎ Clan umbenennen"
+    rename-lore-1: "<dark_gray>» <gray>Nutz den Befehl:"
+    rename-lore-2: "<dark_gray>» <white>/clan rename <name>"
+    setsuffix-name: "<color:#ffaa00>✎ Suffix ändern</color>"
+    setsuffix-lore-1: "<dark_gray>» <gray>Nutz den Befehl:"
+    setsuffix-lore-2: "<dark_gray>» <white>/clan setsuffix <tag>"
+    delete-name: "<red>✘ Clan löschen"
+    delete-lore-1: "<dark_gray>» <gray>Löscht den Clan"
+    delete-lore-2: "<dark_gray>» <red>unwiderruflich!"
+    delete-lore-3: " "
+    delete-lore-4: "<red>▶ Klicke zum Löschen"
+
+protection:
+  # Ob Clan-Bases geschützt sind (false = claims komplett deaktiviert)
+  enabled: true
+  # Radius um die Clan-Base (in Blöcken)
+  radius: 30.0
+  # Nachricht wenn Gebiet geschützt ist
+  message: "<red>§l✘ §cDieses Gebiet gehört einem anderen Clan!"
+
+quests:
+  # Ob das Clan-Quest-System aktiviert ist
+  enabled: true
